@@ -1,0 +1,18 @@
+@import "navbar.css";
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('PackGoat_Logo-B_3D_Logo_Mockup.jpg');
+    background-size: cover;   
+}
+
+.mainportion {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    max-width: 800px;
+}

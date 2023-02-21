@@ -1,0 +1,21 @@
+@import "navbar.css";
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('PackGoat_Logo-B_3D_Logo_Mockup.jpg');
+    background-position-x: center;
+    background-blend-mode: hard-light;
+}
+
+.body1{
+    position: unset;
+    background-color: whitesmoke;
+    font-family: 'Courier New', Courier, monospace;
+    padding-top: 125px;
+    margin: 70px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}

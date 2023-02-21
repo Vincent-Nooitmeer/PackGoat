@@ -1,0 +1,49 @@
+header {
+    display: flex;
+    height: 55px;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    position: fixed;
+    top: 0;
+}
+
+button {
+    height: 55px;
+}
+
+.navbar, button, a {
+    padding: 10px;
+    margin: 30px;
+    background-color: black;
+    text-decoration: none;
+}
+
+.navbar, button, a:visited {
+    text-decoration: none;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-large;
+    font: bolder;
+
+}
+
+.navbar , button:hover, a:hover {
+    transition: 400ms;
+    border-right: 15px;
+    border-left: 15px;
+    border-top: 15px;
+    border-color: red;
+}
+
+.body1, h1{
+    font-family: 'Courier New', Courier, monospace;
+    margin: 70px;
+    max-width: 800px;
+    width: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}

@@ -1,0 +1,47 @@
+header {
+    display: flex;
+    height: 55px;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    position: fixed;
+    top: 0;
+}
+
+.navbar,
+button,
+a {
+    padding: 10px;
+    margin: 30px;
+    background-color: black;
+    text-decoration: none;
+}
+
+.navbar,
+button,
+a:visited {
+    text-decoration: none;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-large;
+    font: bolder;
+
+}
+
+.navbar,
+button:hover,
+a:hover {
+    transition: 800ms;
+    border-right: 15px;
+    border-left: 15px;
+    border-top: 15px;
+    border-color: red;
+}
+
+.navbar {
+    margin: 70px;
+}
+
+a:hover, button:hover, body {
+    background-blend-mode: darken;
+}
