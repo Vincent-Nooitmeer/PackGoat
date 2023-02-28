@@ -6,7 +6,7 @@ body {
     justify-content: center;
     background-image: url('PackGoat_Logo-B_3D_Logo_Mockup.jpg');
     background-position-x: center;
-    background-blend-mode: hard-light;
+    background-blend-mode: darken;
 }
 
 .body1{
