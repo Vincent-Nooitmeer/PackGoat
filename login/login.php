@@ -10,10 +10,17 @@ $dbname = 'pack_goat';
 $dsn = 'mysql:host=' . $host . ';port=4306;dbname=' . $dbname;
 
 // Create PDO Instance
-$pdo = new PDO($dsn, $user, $password);
-$username = "SELECT * FROM username";
-$stmt = $pdo->prepare($username);
-$stmt->execute([$username]);
+try {
+    $pdo = new PDO($dsn, $user, $password);
+    $username = "SELECT * FROM username";
+    $stmt = $pdo->prepare($username);
+    $stmt->execute([$username]);
+    $username = $stmt->fetch();
+} catch (\PDOException $e) {
+    throw new \PDOException($e->getMessage(), (int)$e->getCode());
+}
+
+
 ?>
 
 <!DOCTYPE html>
