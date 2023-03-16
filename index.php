@@ -1,3 +1,9 @@
+<?php
+
+include_once('functions.php');
+$dsn = dbConnect();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,6 +17,7 @@
         <button><a href="/about-us/about-us.html">ABOUT US</a></button>
         <button><a href="/future-plans/future-plans.html">FUTURE PLANS</a></button>
         <button><a href="/subscription-plans/subscription.html">SUBSCRIPION PLANS</a></button>
+        <button><a href="/login/register.php">LOGIN</a></button>
     </header>
 
     <article class="body1">
@@ -21,13 +28,13 @@
         <p>
             At PackGoat we put customer first. We manage your social media presence to ensure your AND our customer
             satisfaction and maximise your companies social media gain. To read more on this topic we suggest you to
-            visit: <button id="sub">Subscription Plans</button>
+            visit: <button><a href="/subscription-plans/subscription.html">SUBSCRIPION PLANS</a></button>
         </p>
     </article>
 
-    
+
     <div>
-        
+
     </div>
 
 </body>

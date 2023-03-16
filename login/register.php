@@ -1,16 +1,7 @@
 <?php
 
-session_start();
-$host = 'localhost';
-$user = 'root';
-$password = '1234';
-$dbname = 'pack_goat';
-
-// Set DSN
-$dsn = 'mysql:host=' . $host . ';dbname=' . $dbname;
-
-// Create PDO Instance
-$pdo = new PDO($dsn, $user, $password);
+include_once('/../functions.php');
+$dsn = dbConnect();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -23,7 +14,36 @@ $pdo = new PDO($dsn, $user, $password);
 </head>
 
 <body>
-    <a href="login.php">temp</a>
+    <form action="" method="POST">
+        <h4>First name:</h4><br>
+        <input type="text" name="firstName" required><br><br>
+        <h4>Last name:</h4><br>
+        <input type="text" name="lastName" required><br><br>
+        <h4>Email:</h4><br>
+        <input type="email" name="email" required><br><br>
+        <h4>Username:</h4><br>
+        <input type="text" name="userName" required><br><br>
+        <h4>Password:</h4><br>
+        <input type="password" name="password" required><br><br>
+        <input type="submit" name="submit" value="REGISTER">
+    </form>
+
+    <?php 
+    
+    if (isset($_POST['submit'])) {
+        $firstName = $_POST['firstName'];
+        $lastName = $_POST['lastName'];
+        $email = $_POST['email'];
+        $username = $_POST['userName'];
+        $password = $_POST['password'];
+
+        $query = "INSERT INTO customers (username, password, email, firstName, lastName)
+        VALUES ('$username', '$password', '$email', '$firstName', '$lastName')";
+        
+        $dsn->exec($query);
+    }
+    ?>
+    <a href="login.php">Login Instead</a>
 </body>
 
 </html>

@@ -7,7 +7,7 @@ $password = '1234';
 $dbname = 'pack_goat';
 
 // Set DSN
-$dsn = 'mysql:host=' . $host . ';port=4306;dbname=' . $dbname;
+$dsn = 'mysql:host=' . $host . ';port=3306;dbname=' . $dbname;
 
 // Create PDO Instance
 try {
